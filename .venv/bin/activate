@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV=/home/victor-dev/Documentos/Development/finow/.venv
+VIRTUAL_ENV=/home/vicsecondary/Documentos/finow/.venv
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
