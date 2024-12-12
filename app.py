@@ -16,7 +16,7 @@ def cal():
         result_desires = calculatorDesires(total)
         result_savings = calculatorSavings(total)
 
-        return render_template("index.html", totalsNecesity = result_necesity, totalDesires = result_desires, totalsSavings = result_savings, total = total)
+        return render_template("index.html", totalsNecesity = result_necesity, totalsDesires = result_desires, totalsSavings = result_savings, total = total)
     return render_template('index.html')
 
 if __name__ == 'main':
