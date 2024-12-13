@@ -19,6 +19,17 @@ def calculator_one():
         return render_template('index.html', totalsNecesity = result_necesity, totalsDesires = result_desires, totalsSavings = result_savings, total = total)
     return render_template('index.html')
 
+@app.route('total', methods=['POST'])
+def calculator_two():
+    if request.method == 'POST':
+        total = float(request.form['total_amount'])
+        result_necesity = function(total, 0.60)
+        result_desires = function(total, 0.15)
+        result_savings = function(total, 0.35)
+
+        return render_template('index.html', totalsNecesity = result_necesity, totalsDesires = result_desires, totalsSavings = result_savings, total = total)
+    return render_template('index.html')
+
 if __name__ == 'main':
     app.run(debug=True, port=5000)
 
