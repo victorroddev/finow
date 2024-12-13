@@ -8,20 +8,39 @@
 </head>
 <body>
     <h1>Calculadora de presupuesto</h1>
-    <h2>Para presupuesto:</h2>
-    <h3>Gastos necesarios 45%</h3>
-    <h3>Gastos en gustos o deseos (no necesarios) 25%</h3>
-    <h3>Para ahorro y adelanto de deudas 35%</h3>
-    <form action="total" method="POST">
-        <label for="">Ingreso</label>
-        <input type="number" class="" name="total_amount" required>
-        <button type="submit" class="btn btn-primary">Calcular</button>
-    </form>
+    <p>Elige la opcion que mejor se adapte a ti</p>
+    <!--Light-->
     <div>
-        <p>Para {{total}}</p>
-        <p>Total de Gastos Necesarios <span>${{totalsNecesity}}</span></p>
-        <p>Total de Gastos en Deseos ${{totalsDesires}}</p>
-        <p>Total para ahorro o adelantar deuda ${{totalsSavings}}</p>
+        <h3>Light</h3>
+        <p>Opcion mas sencilla para quienes quieren empezar a controlar sus finanzas</p>
+        <p>Con esta opcion administraras tu dinero de la siguiente forma:</p>
+        <ul>
+            <li>Gastos necesarios:<span>80%</span></li>
+            <li>Gastos en gustos:<span>15%</span></li>
+            <li>Dinero para ahorrar:<span>5%</span></li>
+        </ul>
+    </div>
+    <!--Medium-->
+    <div>
+        <h3>Medium</h3>
+        <p>Opcion para quienes tienen algo de experiencia ahorrando o pueden permitirselo</p>
+        <p>Con esta opcion administratas tu dinero de la siguiente forma:</p>
+        <ul>
+            <li>Gastos necesarios:<span>60%</span></li>
+            <li>Gasto en gustos:<span>15%</span></li>
+            <li>Dinero para ahorrar:<span>35%</span></li>
+        </ul>
+    </div>
+    <!--Advance-->
+    <div>
+        <h3>Advance</h3>
+        <p>Opcion para quienes puden ahorrar mas</p>
+        <p>Con esta opcion administratas tu dinero de la siguiente forma:</p>
+        <ul>
+            <li>Gastos necesarios:<span>40%</span></li>
+            <li>Gasto en gustos:<span>25%</span></li>
+            <li>Dinero para ahorrar:<span>35%</span></li>
+        </ul>
     </div>
     
 </body>
